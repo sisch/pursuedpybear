@@ -115,6 +115,12 @@ class Animation:
         """
         return self._frames[self.current_frame].load()
 
+    def number_of_frames(self):
+        """
+        Get number of frames in animation
+        """
+        return len(self._frames)
+
     # This is so that if you assign an Animation to a class, instances will get
     # their own copy, so their animations run independently.
     _prop_name = None
